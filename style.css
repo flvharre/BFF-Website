@@ -49,9 +49,11 @@ header {
 }
 
 header nav {
+    height: fit-content;
   width: 50%;
   display: flex;
   justify-content: flex-end;
+  align-items: flex-end;
   font-weight: 500;
   gap: 5%;
   margin: 1% 6% 0 0;
@@ -60,12 +62,15 @@ header nav {
 
 #logo {
     width: 30%;
-    margin: 1% 0 0 6%;
+    height: 100%;
+    margin-left: 6%;
+    display: flex;
+    align-items: center;
 }
 
 #logo img {
-    height: 105px;
-  }
+  height: 80%;
+}
 
 header nav a {
   color: #e9915f;
@@ -97,20 +102,19 @@ header nav a:hover::before {
 
 /* Section 1*/
 #masection1 {
-  height: 200px;
-  width: 1050px;
-  margin: auto;
+  height: fit-content;
+  width: 75%;
+  margin: 100px auto 0;
   background-color: #a3baa679;
-  margin-top: 50px;
   display: flex;
   align-items: center;
 }
 
 #masection1 p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-align: center;
   color: white;
-  padding: 0 8%;
+  padding: 8%;
   font-family: "Comfortaa", cursive;
   font-weight: 500;
 }
@@ -118,11 +122,9 @@ header nav a:hover::before {
 
 /* Section 2 */
 #masection2 {
-  height: 600px;
-  margin-top: 50px;
-  width: 96%;
-  margin-left: 2%;
-  margin-right: 2%;
+  height: 670px;
+  margin: 100px auto 0;
+  width: fit-content;
   background-color: #f49e5d3d;
 }
 
@@ -130,14 +132,9 @@ header nav a:hover::before {
   color: #f49e5d;
   text-shadow: 4px 4px #ffffff;
   text-align: center;
-  font-size: 3.8rem;
+  font-size: 3.5rem;
   background-color: #f3e5d1;
   font-family: "Super Sunday";
-}
-
-#masection2 div h2 + h3 {
-  margin-left: 20%;
-  margin-right: 20%;
 }
 
 /*Curved svg index*/
@@ -148,7 +145,7 @@ header nav a:hover::before {
 
 .custom-shape-divider-top-1679729809 svg {
   width: 187%;
-  height: 337px;
+  height: 487px;
 }
 
 .custom-shape-divider-top-1679729809 .shape-fill {
@@ -157,43 +154,49 @@ header nav a:hover::before {
 /* //// */
 
 #profils {
-  height: 390px;
+  min-height: 390px;
+  max-height: fit-content;
   display: flex;
   justify-content: space-evenly;
   text-align: center;
   color: white;
-  margin-top: -226px;
+  margin-top: -335px;
   font-family: "Aclonica", sans-serif;
 }
 
 #profils p:not(#profils div a p) {
   font-family: "Comfortaa", cursive;
   font-size: 1.1rem;
+  width: 100%;
+  margin: 5% 0;
+  padding: 0 20%;
 }
 
 #profils div a p {
-    margin-top: 15%;
-    margin-left: 27%;
-    margin-right: 27%;
-    border-radius: 30px;
-    font-size: 25px;
-    font-family: "Nova Square", cursive;
-    transition: all 0.2s ease-in-out;
+  width: fit-content;
+  margin: 15% auto 5%;
+  padding: 4% 18%;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  font-family: "Nova Square", cursive;
+  transition: all 0.2s ease-in-out;
 }
 
 #profils h2 {
-    font-size: 1.7rem;
-    margin-top: 10%;
+  font-size: 1.5rem;
+  width: 100%;
+  margin: 10% 0 5%;
+  padding: 0 20%;
 }
 
 #profils a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .container-profil {
-    width: 260px;
-    border-radius: 20px;
+  width: 260px;
+  border-radius: 20px;
 }
 
 /* Encadrés Gauche Flavie */
@@ -236,14 +239,14 @@ header nav a:hover::before {
 
 /*bouton CV*/
 #containerM a p {
-    border: 2px solid #f99300;
-  }
-  
-  #containerM a p:hover {
-    border: 2px solid #f99100;
-    background-color: #f99100a9;
-    transition: all 0.2s ease-in-out;
-  }
+  border: 2px solid #f99300;
+}
+
+#containerM a p:hover {
+  border: 2px solid #f99100;
+  background-color: #f99100a9;
+  transition: all 0.2s ease-in-out;
+}
 /* //// */
 
 /* Encadrés Droite François*/
@@ -261,22 +264,22 @@ header nav a:hover::before {
 
 /*bouton CV*/
 #containerD a p {
-    border: 2px solid #e5b369;
-  }
-  
-  #containerD a p:hover {
-    border: 2px solid #e5b369;
-    background-color: #e5b369b4;
-    transition: all 0.2s ease-in-out;
-  }
+  border: 2px solid #e5b369;
+}
+
+#containerD a p:hover {
+  border: 2px solid #e5b369;
+  background-color: #e5b369b4;
+  transition: all 0.2s ease-in-out;
+}
 /* //// */
 /* ///////////////////// */
 
 #social {
-  margin-top: 60px;
+  margin-top: 120px;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 3%;
   font-size: 50px;
 }
 
@@ -300,17 +303,21 @@ header nav a:hover::before {
 
 /* Footer */
 footer {
-  padding: 8% 6%;
-  color: #e9915fce;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
-  gap: 2%;
-  align-items: flex-start;
+  padding: 8% 6% 5%;
+  color: #e9925fb3;
+  display: flex;
+  gap: 8%;
+  align-items: center;
   justify-content: center;
   font-family: "Comfortaa", cursive;
-  font-size: 1rem;
-  color: #e9925fcb;
+  font-size: 0.85rem;
+}
+
+footer div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8%;
 }
 
 footer ul li {
@@ -324,9 +331,8 @@ footer ul li a {
   position: relative;
 }
 
-footer ul li a:hover {
-  color: rgb(228, 117, 65);
-  transition: all 0.2s ease-in-out;
+footer ul {
+    width: fit-content;
 }
 
 footer a::before {
@@ -347,7 +353,7 @@ footer a:hover::before {
 }
 
 footer p {
-  width: 180px;
+  width: 15%;
   text-align: left;
 }
 
