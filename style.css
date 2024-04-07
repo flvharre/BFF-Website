@@ -49,7 +49,7 @@ header {
 }
 
 header nav {
-    height: fit-content;
+  height: fit-content;
   width: 50%;
   display: flex;
   justify-content: flex-end;
@@ -61,11 +61,11 @@ header nav {
 }
 
 #logo {
-    width: 30%;
-    height: 100%;
-    margin-left: 6%;
-    display: flex;
-    align-items: center;
+  width: 30%;
+  height: 100%;
+  margin-left: 6%;
+  display: flex;
+  align-items: center;
 }
 
 #logo img {
@@ -111,7 +111,7 @@ header nav a:hover::before {
 }
 
 #masection1 p {
-  font-size: 1rem;
+  font-size: 1.05rem;
   text-align: center;
   color: white;
   padding: 8%;
@@ -303,7 +303,7 @@ header nav a:hover::before {
 
 /* Footer */
 footer {
-  padding: 8% 6% 5%;
+  padding: 5% 6%;
   color: #e9925fb3;
   display: flex;
   gap: 8%;
@@ -314,10 +314,11 @@ footer {
 }
 
 footer div {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 8%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8%;
+  width: 70%;
 }
 
 footer ul li {
@@ -332,7 +333,7 @@ footer ul li a {
 }
 
 footer ul {
-    width: fit-content;
+  width: fit-content;
 }
 
 footer a::before {
@@ -353,7 +354,7 @@ footer a:hover::before {
 }
 
 footer p {
-  width: 15%;
+  width: 25%;
   text-align: left;
 }
 
@@ -365,39 +366,61 @@ footer p {
 /* ///////////////////// */
 
 /* PAGE CONTACT */
+
 #contact {
   width: 100%;
   background-color: rgba(253, 243, 235, 0.274);
   height: fit-content;
   border-bottom: 2px solid white;
-  padding-bottom: 65px; /* 6% */
+  padding: 100px 0;
 }
 
-table {
+form {
   border: solid 4px #a3baa6;
   width: 60%;
-  margin: auto;
   color: #e9915f;
   background-color: rgba(255, 255, 255, 0.514);
   box-shadow: -12px 12px #e9915f;
-  padding: 5px 5px 5px 5px;
+  padding: 5%;
   font-family: "Comfortaa", cursive;
   font-weight: 600;
-  height: 300px;
-  margin-top: 30px;
+  margin: 30px auto 80px;
   font-size: 20px;
-  margin-bottom: 80px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+form div {
+  display: flex;
+  width: 80%;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  margin: 0 auto 15px;
+  text-align: right;
+}
+
+label {
+  width: 25%;
+}
+
+#contact form input:not(input[type="submit"]),
+textarea {
+  border: none;
+  padding: 15px 20px;
+  border-radius: 20px;
+  width: 70%;
+  font-family: "Comfortaa", cursive;
 }
 
 #formulaire {
-  height: 500px;
   padding-top: 30px;
   display: flex;
   flex-direction: column;
 }
 
 #formulaire img {
-  margin: auto;
+  margin: 0 auto 20px;
   height: 70px;
 }
 
@@ -411,6 +434,24 @@ table {
   height: 80px;
 }
 
+input[type="submit"] {
+    margin-top: 30px;
+    width: 50%;
+    background-color: #f78935;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    color: white;
+    font-family: "Comfortaa", cursive;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #f99100;
+    transition: 0.2s ease-in-out;
+}
 /* ///////////////////// */
 
 /* PAGE GALERIE + CV*/
