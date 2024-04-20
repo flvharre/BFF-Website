@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Palanquin+Dark:wght@400;500;600;700&display=swap");
 
+@font-face {
+  font-family: "Jalembe";
+  src: url("path/to/Jalembe.otf") format("opentype"),
+    url("path/to/Jalembe.ttf") format("truetype");
+}
+
 /*
 font-family: 'Comfortaa', cursive;
 font-family: 'Aclonica', sans-serif;
@@ -18,10 +24,11 @@ body {
   background: #f9e7cd;
 }
 
-#Topbanner img {
+#top-banner img {
   width: 84%;
   margin-left: 16%;
-  margin-bottom: -3px;
+  margin-bottom: -5px;
+  z-index: -10;
 }
 
 /* Header */
@@ -87,10 +94,10 @@ header nav a {
 }
 
 .bouton {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   border-radius: 40px;
   background-color: #f99300;
-  padding: 15px 30px;
+  padding: 3% 18%;
   text-decoration: none;
   font-family: "Palanquin Dark";
   color: white;
@@ -118,56 +125,51 @@ header nav a {
 
 /* ///////////////////// */
 
-/* Section 1*/
-#masection1 {
+/* SECTION BFF */
+#section-BFF {
+  position: relative;
   height: fit-content;
-  width: 75%;
   margin: 100px auto 0;
-  background-color: #a3baa679;
+}
+
+h2 {
+  font-family: "Jalembe", sans-serif;
+  color: #f0894f;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+#logo-container {
+  margin-top: 50px;
+  width: 100%;
+  height: fit-content;
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
-#masection1 p {
-  font-size: 1.05rem;
-  text-align: center;
-  color: white;
-  padding: 8%;
-  font-family: "Comfortaa", cursive;
-  font-weight: 500;
-}
-/* ///////////////////// */
+#logo-container img {
+  width: 15%;
 
-/* Section 2 */
-#masection2 {
-  height: 670px;
-  margin: 100px auto 0;
-  width: fit-content;
-  background-color: #f49e5d3d;
 }
 
-#masection2 h1 {
-  color: #f49e5d;
-  text-shadow: 4px 4px #ffffff;
-  text-align: center;
-  font-size: 3.5rem;
-  background-color: #f3e5d1;
-  font-family: "Super Sunday";
-}
-
-/*Curved svg index*/
-.custom-shape-divider-top-1679729809 {
+/*Curved svg shape*/
+.custom-shape-divider-top {
   width: 100%;
   overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  z-index: -50;
 }
 
-.custom-shape-divider-top-1679729809 svg {
+.custom-shape-divider-top svg {
   width: 187%;
-  height: 487px;
+  margin-left: -10%;
+  height: 400px;
 }
 
-.custom-shape-divider-top-1679729809 .shape-fill {
-  fill: #f3e5d1;
+.custom-shape-divider-top .shape-fill {
+  fill: #F0A77C;
 }
 /* //// */
 
@@ -178,12 +180,14 @@ header nav a {
   justify-content: space-evenly;
   text-align: center;
   color: white;
-  margin-top: -335px;
+  margin-top: 170px;
+  margin-bottom: -5px;
   font-family: "Aclonica", sans-serif;
+  padding-bottom: 50px;
 }
 
 #profils p:not(#profils div a p) {
-  font-family: "Comfortaa", cursive;
+  font-family: "Palanquin Dark", sans-serif;
   font-size: 1.1rem;
   width: 100%;
   margin: 5% 0;
@@ -193,18 +197,20 @@ header nav a {
 #profils div a p {
   width: fit-content;
   margin: 15% auto 5%;
-  padding: 4% 18%;
-  border-radius: 30px;
-  font-size: 1.3rem;
-  font-family: "Nova Square", cursive;
+  padding: 3% 14%;
+  border-radius: 40px;
+  font-size: 1.1rem;
+  font-family: "Palanquin Dark", sans-serif;
   transition: all 0.2s ease-in-out;
 }
 
-#profils h2 {
-  font-size: 1.5rem;
+#profils h3 {
+  font-size: 1.7rem;
   width: 100%;
   margin: 10% 0 5%;
   padding: 0 20%;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
 }
 
 #profils a {
@@ -213,7 +219,8 @@ header nav a {
 }
 
 .container-profil {
-  width: 260px;
+  width: 270px;
+  padding-bottom: 45px;
   border-radius: 20px;
 }
 
@@ -292,6 +299,37 @@ header nav a {
 }
 /* //// */
 /* ///////////////////// */
+
+/* SECTION VALEURS */
+#valeurs-BFF {
+  color: white;
+  font-family: "Palanquin Dark", sans-serif;
+  font-variant: small-caps;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+#valeurs-container {
+  background-color: #A3BAA6;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 15%;
+}
+
+#valeurs-container div {
+text-align: center;
+}
+
+#valeurs-container img {
+  height: 80px;
+}
+
+.wave-separator-down path {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #a3baa6;
+}
 
 #social {
   margin-top: 120px;
