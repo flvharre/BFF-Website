@@ -1,16 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Nova+Square&family=Bayon&family=Rammetto+One&family=Aclonica&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Palanquin+Dark:wght@400;500;600;700&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Comfortaa:wght@300..700&display=swap");
-
-@font-face {
-  font-family: "Super Sunday";
-  src: url("fonts/Super\ Sunday\ Personal\ Use.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Super Funky";
-  src: url("fonts/Super\ Funky.ttf") format("truetype");
-}
 /*
 font-family: 'Comfortaa', cursive;
 font-family: 'Aclonica', sans-serif;
@@ -26,8 +15,7 @@ font-family: 'Nova Square', cursive;
 }
 
 body {
-  background: #f3e5d1;
-  height: 100vh;
+  background: #f9e7cd;
 }
 
 #Topbanner img {
@@ -37,65 +25,95 @@ body {
 }
 
 /* Header */
-header {
-  border-top: solid;
-  border-bottom: solid;
-  border-color: white;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
 
 header nav {
-  height: fit-content;
-  width: 50%;
+  height: 100px;
+  background: #f0894f;
+  width: 100%;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  font-weight: 500;
-  gap: 5%;
-  margin: 1% 6% 0 0;
-  font-family: "Bayon", sans-serif;
-}
-
-#logo {
-  width: 30%;
-  height: 100%;
-  margin-left: 6%;
-  display: flex;
+  justify-content: center;
   align-items: center;
-}
-
-#logo img {
-  height: 80%;
+  gap: 5%;
 }
 
 header nav a {
-  color: #e9915f;
-  text-decoration: none;
-  font-size: 2rem;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
   transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+#logo {
+  height: 75%;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}
+
+#logo img {
+  height: 100%;
+}
+
+#header-banner {
+  background-color: #fbf1e1;
+  height: fit-content;
   position: relative;
-  padding: 0 15px;
 }
 
-header nav a::before {
-  content: "";
-  z-index: -100;
+#header-banner-img {
+  width: 55%;
+}
+
+#header-banner-text {
+  width: 45%;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#header-banner-text p {
+  color: #f99300;
+  text-align: center;
+  font-family: "Palanquin Dark";
+  font-size: 1.43rem;
+  font-weight: 600;
+  height: fit-content;
+}
+
+.bouton {
+  font-size: 1.2rem;
+  border-radius: 40px;
+  background-color: #f99300;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-family: "Palanquin Dark";
+  color: white;
+  margin-top: 10%;
+  text-transform: uppercase;
+}
+
+.image-container {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.banner-content {
+  display: flex;
+}
+
+.wave-separator {
   position: absolute;
-  bottom: 17px;
-  left: 0;
-  width: 0;
-  height: 17px;
-  background-color: rgba(255, 249, 247, 0.692);
-  transition: width 0.3s ease-in-out;
-}
-
-header nav a:hover::before {
-  width: 100%; /* Expand the width to 100% on hover */
-  transition: width 0.3s ease-in-out;
+  bottom: -0;
 }
 
 /* ///////////////////// */
@@ -435,22 +453,22 @@ textarea {
 }
 
 input[type="submit"] {
-    margin-top: 30px;
-    width: 50%;
-    background-color: #f78935;
-    border: none;
-    padding: 15px 20px;
-    border-radius: 20px;
-    color: white;
-    font-family: "Comfortaa", cursive;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
+  margin-top: 30px;
+  width: 50%;
+  background-color: #f78935;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 20px;
+  color: white;
+  font-family: "Comfortaa", cursive;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
 
 input[type="submit"]:hover {
-    background-color: #f99100;
-    transition: 0.2s ease-in-out;
+  background-color: #f99100;
+  transition: 0.2s ease-in-out;
 }
 /* ///////////////////// */
 
