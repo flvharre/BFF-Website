@@ -76,38 +76,13 @@ header nav a {
   position: relative;
 }
 
+.banner-content {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 #header-banner-img {
-  width: 55%;
-}
-
-#header-banner-text {
-  width: 45%;
-  padding: 3% 6%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-#header-banner-text p {
-  color: #f99300;
-  text-align: center;
-  font-size: 0.7rem;
-  font-weight: 600;
-  height: fit-content;
-}
-
-.bouton {
-  font-size: 0.54rem;
-  border-radius: 40px;
-  background-color: #f99300;
-  padding: 3% 18%;
-  text-decoration: none;
-  font-family: "Palanquin Dark";
-  color: white;
-  margin-top: 10%;
-  text-transform: uppercase;
-  font-weight: 600;
+    width: 95%;
 }
 
 .image-container {
@@ -120,8 +95,36 @@ header nav a {
   width: 100%;
 }
 
-.banner-content {
-  display: flex;
+#header-banner-text {
+    width: 75%;
+    padding: 3% 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 25px auto 0;
+}
+
+#header-banner-text p {
+  color: #f99300;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  height: fit-content;
+}
+
+.bouton {
+  font-size: 0.6rem;
+  border-radius: 40px;
+  background-color: #f99300;
+  padding: 3% 18%;
+  text-decoration: none;
+  font-family: "Palanquin Dark";
+  color: white;
+  margin-top: 10%;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .wave-separator {
@@ -169,7 +172,7 @@ h2 {
 }
 
 #logo-container img {
-  width: 30%;
+  width: 35%;
 }
 
 /*Curved svg shape*/
@@ -199,15 +202,14 @@ h2 {
   flex-direction: column;
   text-align: center;
   color: white;
-  margin-top: 170px;
+  margin-top: 130px;
   margin-bottom: -5px;
   font-family: "Aclonica", sans-serif;
   align-items: center;
 }
 
 .container-profil {
-  min-width: 60%;
-  max-width: 250px;
+  width: 235px;
   padding-bottom: 45px;
   border-radius: 20px;
   margin-bottom: 150px;
@@ -516,12 +518,12 @@ footer a::before {
   width: 0;
   height: 10px;
   background-color: rgba(255, 249, 247, 0.963);
-  transition: width 0.3s ease-in-out;
+  transition: width 0.25s ease-in-out;
 }
 
 footer a:hover::before {
   width: 100%;
-  transition: width 0.3s ease-in-out;
+  transition: width 0.25s ease-in-out;
 }
 
 footer p {
@@ -573,7 +575,7 @@ text-align: left;
 #wave-separator-intro {
   position: absolute;
   left: 0;
-  bottom: -5px;
+  bottom: -2px;
   width: 100%;
 }
 
@@ -590,7 +592,7 @@ text-align: left;
 #wave-separator-lieux {
   position: absolute;
   left: 0;
-  bottom: -5px;
+  bottom: -2px;
   width: 100%;
 }
 
@@ -769,12 +771,22 @@ input[type="submit"]:hover {
 /* ///////////////////// */
 
 @media screen and (min-width: 480px) {
+  .banner-content {
+    flex-direction: row;
+  }
+
   .image-container {
     margin-top: 50px;
   }
-
+  
+  #header-banner-img {
+    width: 55%;
+  }
+  
   #header-banner-text {
+    width: 45%;
     padding: 3% 6% 7%;
+    margin: 0;
   }
 
   #header-banner-text p {
@@ -790,10 +802,15 @@ input[type="submit"]:hover {
   }
 
   #logo-container img {
-    width: 25%;
+    max-width: 25%;
+    min-width: 160px;
   }
 
   /* //// */
+
+  #profils {
+    margin-top: 170px;
+  }
 
   .container-profil {
     min-width: 50%;
@@ -886,19 +903,25 @@ input[type="submit"]:hover {
 }
 
 @media screen and (min-width: 576px) {
+
   #header-banner-text p {
     font-size: 1.1rem;
   }
+
+  /* TEAM SECTION */
   .container-profil {
     min-width: 45%;
     max-width: 340px;
   }
 
+  /* ROLLER DANCING SECTION */
   #roller-dancing-img {
     width: 100%;
     height: 350px;
     overflow: hidden;
   }
+
+  /* GALERIE SECTION */
 
   #galerie-content {
     display: grid;
@@ -919,6 +942,7 @@ input[type="submit"]:hover {
   #galerie-content div:nth-of-type(10) {
     display: block;
   }
+
 
   #social {
     font-size: 65px;
@@ -945,7 +969,8 @@ input[type="submit"]:hover {
   }
 
   #logo-container img {
-    width: 15%;
+    min-width: 160px;
+    max-width: 14%;
   }
 
   /*Curved svg shape*/
@@ -1028,6 +1053,12 @@ input[type="submit"]:hover {
     grid-column: 2;
     grid-row: 3;
   }
+
+
+  
+  #rd-page p {
+    font-size: 1rem;
+}
 
   /*//////////*/
 
