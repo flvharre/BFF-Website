@@ -21,13 +21,24 @@
 
     <header>
       <nav>
-        <a href="index.html">Accueil</a>
-        <a href="roller-dancing.html">Roller dancing</a>
-        <a id="logo" href="index.html"
+        <div id="links">
+        <a class="menuItem" href="index.html">Accueil</a>
+        <a class="menuItem" href="roller-dancing.html">Roller dancing</a>
+        <a class="menuItem" id="logo" href="index.html"
           ><img src="Images/logo-2.svg" alt="Logo de la team BFF"
         /></a>
-        <a href="#">La team</a>
-        <a href="#">Nous contacter</a>
+        <a class="menuItem" href="#">La team</a>
+        <a class="menuItem" href="#">Nous contacter</a>
+        </div>
+
+        <a class="menuItem" id="logo-hamburger" href="index.html"
+        ><img src="Images/logo-2.svg" alt="Logo de la team BFF"
+      /></a>
+        <button class="hamburger">
+          <i class="fa fa-bars"></i>
+          <i class="fa-solid fa-xmark xmark"></i>
+        </button>
+
       </nav>
 
       <div id="header-banner">
@@ -280,5 +291,7 @@
         tempor incididunt ut labore et dolore magna aliqua.
       </p>
     </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>
