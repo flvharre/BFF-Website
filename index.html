@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -21,24 +21,23 @@
 
     <header>
       <nav>
-        <div id="links">
-        <a class="menuItem" href="index.html">Accueil</a>
-        <a class="menuItem" href="roller-dancing.html">Roller dancing</a>
-        <a class="menuItem" id="logo" href="index.html"
-          ><img src="Images/logo-2.svg" alt="Logo de la team BFF"
-        /></a>
-        <a class="menuItem" href="#">La team</a>
-        <a class="menuItem" href="#">Nous contacter</a>
+        <div class="to-animate" id="links">
+          <a class="menuItem" href="index.html">Accueil</a>
+          <a class="menuItem" href="roller-dancing.html">Roller dancing</a>
+          <a class="menuItem" id="logo" href="index.html"
+            ><img src="Images/logo-2.svg" alt="Logo de la team BFF"
+          /></a>
+          <a class="menuItem" href="team.html">La team</a>
+          <a class="menuItem" href="contact.html">Nous contacter</a>
         </div>
 
         <a class="menuItem" id="logo-hamburger" href="index.html"
-        ><img src="Images/logo-2.svg" alt="Logo de la team BFF"
-      /></a>
+          ><img src="Images/logo-2.svg" alt="Logo de la team BFF"
+        /></a>
         <button class="hamburger">
           <i class="fa fa-bars"></i>
           <i class="fa-solid fa-xmark xmark"></i>
         </button>
-
       </nav>
 
       <div id="header-banner">
@@ -52,13 +51,13 @@
             </div>
           </div>
 
-          <div id="header-banner-text">
+          <div class="to-animate" id="header-banner-text">
             <p>
-              Une team passionnée,
+              Une team <span class="wavy">passionnée</span>,
               <br />
               un plongeon dans l’univers du roller
             </p>
-            <a class="bouton" href="#">super bouton</a>
+            <a class="bouton" href="roller-dancing.html">super bouton</a>
           </div>
         </div>
         <?xml version="1.0" encoding="utf-8"?>
@@ -91,9 +90,9 @@
     </header>
 
     <section id="section-BFF">
-      <h2>Notre Team</h2>
+      <h2 class="to-animate">Notre Team</h2>
       <div id="logo-container">
-        <img src="Images/logo-2.svg" alt="Logo de la Team BFF" />
+        <img class="to-animate" src="Images/logo-2.svg" alt="Logo de la Team BFF" />
       </div>
       <div class="custom-shape-divider-top">
         <svg
@@ -119,7 +118,7 @@
         </svg>
       </div>
 
-      <div id="profils">
+      <div class="to-animate" id="profils">
         <div id="containerG" class="container-profil">
           <a href="#"
             ><img src="Images/Avatars/Avatar-Flavie-3.svg" alt=""
@@ -129,7 +128,7 @@
             Harre
           </h3>
           <p>Lorem ipsum dolor sit amet</p>
-          <a href="#"><p>A propos de moi</p></a>
+          <a class="bouton-profils" href="#">A propos de moi</a>
         </div>
         <div id="containerM" class="container-profil">
           <a href="#"
@@ -140,7 +139,7 @@
             Ruelle
           </h3>
           <p>Lorem ipsum dolor sit amet</p>
-          <a href="#"><p>A propos de moi</p></a>
+          <a class="bouton-profils" href="#">A propos de moi</a>
         </div>
         <div id="containerD" class="container-profil">
           <a href="#"
@@ -151,7 +150,7 @@
             Janiak
           </h3>
           <p>Lorem ipsum dolor sit amet</p>
-          <a href="#"><p>A propos de moi</p></a>
+          <a class="bouton-profils" href="#">A propos de moi</a>
         </div>
       </div>
     </section>
@@ -159,16 +158,16 @@
     <section id="valeurs-BFF">
       <div id="valeurs-container">
         <div>
-          <img src="Images/coeurs.png" alt="" />
-          <p>amour</p>
+          <img class="to-animate" src="Images/coeurs.png" alt="" />
+          <p class="to-animate">amour</p>
         </div>
         <div>
-          <img src="Images/feu.png" alt="" />
-          <p>passion</p>
+          <img class="to-animate" src="Images/feu.png" alt="" />
+          <p class="to-animate">passion</p>
         </div>
         <div>
-          <img src="Images/colombe.png" alt="" />
-          <p>liberté</p>
+          <img class="to-animate" src="Images/colombe.png" alt="" />
+          <p class="to-animate">liberté</p>
         </div>
       </div>
     </section>
@@ -176,7 +175,8 @@
     <section id="roller-dancing">
       <svg
         version="1.1"
-        class="wave-separator" id="wave-separator-valeurs"
+        class="wave-separator"
+        id="wave-separator-valeurs"
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
         x="0px"
@@ -200,7 +200,7 @@
       </svg>
 
       <div id="roller-dancing-content">
-        <div id="roller-dancing-text">
+        <div class="to-animate"  id="roller-dancing-text">
           <h2>Roller dancing</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -211,38 +211,38 @@
           <a class="bouton" href="#">Découvrir</a>
         </div>
         <div id="roller-dancing-img">
-        <img src="Images/rollers_02.jpg" alt="" />
-      </div>
+          <img src="Images/rollers_02.jpg" alt="" />
+        </div>
       </div>
     </section>
 
-    <section id="galerie-BFF">
+    <section class="to-animate" id="galerie-BFF">
       <h2>Galerie</h2>
       <div id="galerie-content">
         <div class="galerie-img">
           <img src="Images/rollers-groupe_03.jpg" alt="" />
         </div>
-        <div class="galerie-img"></div>
+        <div></div>
         <div class="galerie-img">
           <img src="Images/roller-landscape_02.jpg" alt="" />
         </div>
-        <div class="galerie-img"></div>
+        <div></div>
         <div class="galerie-img">
           <img src="Images/roller-landscape_01.jpg" alt="" />
         </div>
-        <div class="galerie-img"></div>
+        <div></div>
         <div class="galerie-img">
           <img src="Images/rollers-groupe_02.jpg" alt="" />
         </div>
-        <div class="galerie-img"></div>
+        <div></div>
         <div class="galerie-img">
           <img src="Images/rollers_01.jpg" alt="" />
         </div>
-        <div class="galerie-img"></div>
+        <div></div>
       </div>
     </section>
 
-    <section id="social">
+    <section class="to-animate" id="social">
       <a target="_blank" href="https://www.instagram.com/"
         ><i class="fa-brands fa-square-instagram"></i
       ></a>
@@ -250,11 +250,13 @@
         ><i class="fa-brands fa-square-twitter"></i
       ></a>
       <a target="_blank" href="https://www.youtube.com/"
-        ><i class="fa-brands fa-square-youtube"></i></a>
+        ><i class="fa-brands fa-square-youtube"></i
+      ></a>
     </section>
 
     <svg
-      version="1.1" class="wave-separator"
+      version="1.1"
+      class="wave-separator"
       id="wave-separator-footer"
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -272,7 +274,7 @@
       />
     </svg>
 
-    <footer>
+    <footer >
       <ul>
         <li class="footer-section">A propos</li>
         <li><a href="#">Dolor si amet</a></li>
@@ -281,7 +283,7 @@
       </ul>
       <ul>
         <li class="footer-section">Mentions legales</li>
-        <li><a href="#">Attributions</a></li>
+        <li><a href="credits.html">Attributions</a></li>
         <li><a href="#">Dolor si amet</a></li>
         <li><a href="#">Dolor si amet</a></li>
       </ul>
