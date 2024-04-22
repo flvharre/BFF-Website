@@ -275,7 +275,7 @@ i.fa-solid.fa-xmark.xmark {
 }
 
 .wavy::before {
-  content: url("Images/wave-underline.svg");
+  content: url("img/wave-underline.svg");
   position: absolute;
   bottom: -36%;
   left: 0;
@@ -305,7 +305,7 @@ i.fa-solid.fa-xmark.xmark {
 }
 
 .bouton::before {
-  content: url("Images/tilt.svg");
+  content: url("img/tilt.svg");
   position: absolute;
   top: -30%;
   right: -5%;
@@ -316,7 +316,7 @@ i.fa-solid.fa-xmark.xmark {
 }
 
 #header-banner .bouton::before {
-  content: url("Images/tilt-orange.svg");
+  content: url("img/tilt-orange.svg");
 }
 
 .bouton:hover::before {
@@ -501,7 +501,7 @@ h3,
 }
 
 .bouton-profils::before {
-  content: url("Images/flower-2.svg");
+  content: url("img/flower-2.svg");
   position: absolute;
   top: -10%;
   left: 6%;
@@ -521,7 +521,7 @@ h3,
 }
 
 .bouton-profils::after {
-  content: url("Images/flowers-2.svg");
+  content: url("img/flowers-2.svg");
   position: absolute;
   bottom: -20%;
   right: 0;
@@ -1070,7 +1070,7 @@ form {
 }
 
 form::before {
-  content: url(Images/flowers-2.svg);
+  content: url(img/flowers-2.svg);
   position: absolute;
   width: 22%;
   top: -4%;
@@ -1139,7 +1139,7 @@ input[type="submit"]:hover {
 }
 
 /* input[type="submit"]::before {
-  content: url('Images/tilt-blue.svg');
+  content: url('img/tilt-blue.svg');
   position: absolute;
   top: 0;
   right: 0;
