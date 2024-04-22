@@ -300,6 +300,10 @@ i.fa-solid.fa-xmark.xmark {
   position: relative;
 }
 
+#header-banner .bouton:hover {
+  background-color: #a3baa6;
+}
+
 .bouton::before {
   content: url("Images/tilt.svg");
   position: absolute;
@@ -312,7 +316,7 @@ i.fa-solid.fa-xmark.xmark {
 }
 
 #header-banner .bouton::before {
-  content: url("Images/tilt-blue.svg");
+  content: url("Images/tilt-orange.svg");
 }
 
 .bouton:hover::before {
@@ -342,7 +346,7 @@ i.fa-solid.fa-xmark.xmark {
 #section-BFF {
   position: relative;
   height: fit-content;
-  margin: 100px auto 0;
+  margin: 105px auto 0;
 }
 
 .to-animate {
@@ -563,7 +567,7 @@ h3,
 
 /* Encadrés Milieu Benjamin */
 #containerM {
-  background-color: #f6b250;
+  background-color: #feb247;
 }
 
 #containerM img {
@@ -714,7 +718,7 @@ h3,
 
 /* GALERIE SECTION */
 #galerie-BFF {
-  margin-top: 100px;
+  margin-top: 120px;
 }
 
 #galerie-BFF.animate {
@@ -1108,6 +1112,7 @@ select {
   padding: 13px 20px;
   border-radius: 20px;
   width: 100%;
+  overflow: visible;
 }
 
 select option {
@@ -1202,7 +1207,7 @@ input[type="submit"]:hover::before {
 
   #header-banner-text {
     width: 45%;
-    padding: 3% 6% 7%;
+    padding: 3% 10% 7% 4%;
     margin: 0;
   }
 
@@ -1217,7 +1222,7 @@ input[type="submit"]:hover::before {
 
   h2,
   h1 {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
   #credits h2 {
     font-size: 1.4rem;
@@ -1442,7 +1447,7 @@ input[type="submit"]:hover::before {
 
   h2,
   h1 {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 
   #credits h2 {
@@ -1624,6 +1629,12 @@ input[type="submit"]:hover::before {
   }
 
   /* TEAM SECTION */
+  #section-BFF {
+    position: relative;
+    height: fit-content;
+    margin: 120px auto 0;
+  }
+
   .container-profil {
     min-width: 280px;
     max-width: 300px;
@@ -1668,6 +1679,11 @@ input[type="submit"]:hover::before {
   }
 
   /* GALERIE SECTION */
+  
+#galerie-BFF {
+  margin-top: 150px;
+}
+
   #galerie-content {
     grid-template-columns: repeat(3, 280px);
     grid-template-rows: repeat(3, 280px);
