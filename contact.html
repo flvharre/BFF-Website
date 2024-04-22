@@ -9,6 +9,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preload" as="font" href="fonts/Jalembe.woff2" crossorigin>
     <title>Contactez-nous</title>
   </head>
 
@@ -43,16 +45,16 @@
 
     <main id="contact">
       <div id="formulaire">
-        <h1>Bienvenue sur notre page de contact</h1>
-        <form>
+        <h1 class="to-animate">Bienvenue sur notre page de contact</h1>
+        <form class="to-animate">
           <div id="fullname">
             <div>
               <label for="nom">Nom</label>
-              <input type="text" name="nom" placeholder="Votre nom" />
+              <input type="text" name="nom" id="nom" placeholder="Votre nom" autocomplete="nom"/>
             </div>
             <div>
               <label for="prenom">Prénom</label>
-              <input type="text" name="prenom" placeholder="Votre prénom" />
+              <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" autocomplete="prenom"/>
             </div>
           </div>
           <div>
@@ -78,7 +80,9 @@
             <input
               type="email"
               name="email"
+              id="email"
               placeholder="ex : nom@domaine.fr"
+              autocomplete="email"
             />
           </div>
           <div>

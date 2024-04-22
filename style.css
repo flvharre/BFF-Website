@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: "Jalembe";
-  src: url("fonts/Jalembe.otf") format("opentype"),
-    url("fonts/Jalembe.ttf") format("truetype");
+  /*  url("fonts/Jalembe.otf") format("opentype"), */
+  src: url("fonts/Jalembe.woff2") format("woff2");
 }
 
 * {
@@ -18,52 +18,51 @@ body {
 }
 
 @keyframes jello {
-	0% {
-		transform: scale3d(1, 1, 1);
-	}
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
 
-	30% {
-		transform: scale3d(1.25, 0.75, 1);
-	}
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
 
-	40% {
-		transform: scale3d(0.75, 1.25, 1);
-	}
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
 
-	50% {
-		transform: scale3d(1.15, 0.85, 1);
-	}
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
 
-	65% {
-		transform: scale3d(0.95, 1.05, 1);
-	}
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
 
-	75% {
-		transform: scale3d(1.05, 0.95, 1);
-	}
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
 
-	100% {
-		transform: scale3d(1, 1, 1);
-      animation: none; /* Stop animation at 100% */
-      transform: none; /* Ensure final state */
-	}
+  100% {
+    transform: scale3d(1, 1, 1);
+    animation: none; /* Stop animation at 100% */
+    transform: none; /* Ensure final state */
+  }
 }
 
 @keyframes wobble {
-	0%,
-	100% {
-		transform: translateX(0%);
-		transform-origin: 50% 50%;
-	}
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
 
-	30% {
-		transform: translateX(-20px) rotate(-15deg);
-	}
+  30% {
+    transform: translateX(-20px) rotate(-15deg);
+  }
 
-	70% {
-		transform: translateX(10px) rotate(10deg);
-	}
-
+  70% {
+    transform: translateX(10px) rotate(10deg);
+  }
 }
 
 @keyframes zoom-in {
@@ -134,7 +133,6 @@ header nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 7%;
-  overflow: hidden;
 }
 
 #links {
@@ -258,12 +256,11 @@ i.fa-solid.fa-xmark.xmark {
   margin: 25px auto 0;
 }
 
-#header-banner-text.animate {
+#header-banner-text.animate, #credits {
   animation-name: appear-left;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
 }
-
 
 #header-banner-text p {
   color: #f99300;
@@ -278,7 +275,7 @@ i.fa-solid.fa-xmark.xmark {
 }
 
 .wavy::before {
-  content: url('Images/wave-underline.svg');
+  content: url("Images/wave-underline.svg");
   position: absolute;
   bottom: -36%;
   left: 0;
@@ -304,7 +301,7 @@ i.fa-solid.fa-xmark.xmark {
 }
 
 .bouton::before {
-  content: url('Images/tilt.svg');
+  content: url("Images/tilt.svg");
   position: absolute;
   top: -30%;
   right: -5%;
@@ -315,8 +312,7 @@ i.fa-solid.fa-xmark.xmark {
 }
 
 #header-banner .bouton::before {
-  content: url('Images/tilt-blue.svg');
-
+  content: url("Images/tilt-blue.svg");
 }
 
 .bouton:hover::before {
@@ -501,7 +497,7 @@ h3,
 }
 
 .bouton-profils::before {
-  content: url('Images/flower-2.svg');
+  content: url("Images/flower-2.svg");
   position: absolute;
   top: -10%;
   left: 6%;
@@ -518,11 +514,10 @@ h3,
   opacity: 1;
   transition: all 0.2s ease-in-out;
   z-index: -1;
-
 }
 
 .bouton-profils::after {
-  content: url('Images/flowers-2.svg');
+  content: url("Images/flowers-2.svg");
   position: absolute;
   bottom: -20%;
   right: 0;
@@ -539,9 +534,7 @@ h3,
   opacity: 1;
   transition: all 0.2s ease-in-out;
   z-index: -1;
-
 }
-
 
 #profils a {
   text-decoration: none;
@@ -651,10 +644,7 @@ h3,
   transition: all 0.9s ease-in-out;
 }
 
-
 /* ////////////// */
-
-
 
 /* ROLLER DANCING SECTION */
 #roller-dancing {
@@ -784,7 +774,7 @@ h3,
   margin-top: 120px;
   display: flex;
   justify-content: center;
-  gap: 3%;
+  gap: 5%;
   font-size: 50px;
   transition: all 0.2s ease-in-out;
 }
@@ -876,6 +866,34 @@ footer p {
 /* ///////////////////// */
 
 /* ------- PAGE ROLLER DANCING ------- */
+#rd-intro h1.animate,
+#formulaire h1.animate {
+  animation-name: jello;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out;
+}
+
+#rd-intro p.animate {
+  animation-name: fade-in;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+
+#rd-page h2.animate {
+  animation-name: appear-left;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+#rd-page p:not(#rd-intro p).animate {
+  animation-name: appear-right;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.3s;
+}
 
 #rd-page h2,
 #rd-page h1 {
@@ -964,25 +982,38 @@ footer p {
 }
 
 #rd-conseils {
-  padding-top: 150px;
+  padding-top: 130px;
   background-color: #f99300;
+}
+
+#rd-presentation {
+  padding-bottom: 130px;
 }
 
 /* PAGE CREDITS */
 #credits {
+  opacity: 0;
   width: 80%;
   height: fit-content;
   margin: 100px auto 0;
   color: #f78935;
 }
 
-#credits ul:nth-child(3),
-#credits ul:nth-child(5) {
-  margin-top: 15px;
+#credits h1 {
+  margin-left: 0;
+}
+
+#credits h2 {
+  margin-bottom: 15px;
 }
 
 #credits h2:nth-of-type(2) {
-  margin-top: 35px;
+  margin-top: 55px;
+}
+
+#credits ul:nth-child(3),
+#credits ul:nth-child(5) {
+  margin-top: 15px;
 }
 
 #credits ul ul li {
@@ -1020,6 +1051,39 @@ form {
   padding: 9%;
   margin: 30px auto 0;
   border-radius: 20px;
+  position: relative;
+}
+
+@keyframes appear-right-form {
+  from {
+    opacity: 0%;
+    transform: translateX(40px) scaleX(-1);
+  }
+  to {
+    opacity: 100%;
+    transform: translateX(0) scaleX(-1);
+  }
+}
+
+form::before {
+  content: url(Images/flowers-2.svg);
+  position: absolute;
+  width: 22%;
+  top: -4%;
+  right: -8%;
+  transform: scaleX(-1);
+  animation-name: appear-right-form;
+  animation-duration: 1.1s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
+}
+
+form.animate {
+  animation-name: fade-in;
+  animation-duration: 1.7s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.3s;
 }
 
 form label {
@@ -1027,6 +1091,14 @@ form label {
   margin: 20px 0 10px;
   font-size: 1.1rem;
   font-family: "Lilita One", sans-serif;
+}
+
+form select:focus-visible, form select:focus-within {
+  border: 2px #819e80 solid;
+}
+
+form #fullname label {
+  margin: 20px 0 10px;
 }
 
 #contact form input:not(input[type="submit"]),
@@ -1038,8 +1110,13 @@ select {
   width: 100%;
 }
 
+select option {
+  white-space: normal;
+  font-size: 0.6rem;
+}
+
 #message {
-  height: 80px;
+  height: 150px;
 }
 
 input[type="submit"] {
@@ -1048,12 +1125,30 @@ input[type="submit"] {
   cursor: pointer;
   width: 100%;
   transition: 0.2s ease-in-out;
+  position: relative;
 }
 
 input[type="submit"]:hover {
   background-color: #ffae36;
   transition: 0.2s ease-in-out;
 }
+
+/* input[type="submit"]::before {
+  content: url('Images/tilt-blue.svg');
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15%;
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+
+input[type="submit"]:hover::before {
+  top: -50%;
+  right: -10%;
+  width: 20%;
+  opacity: 1;
+} */
 /* ///////////////////// */
 
 /* PAGE GALERIE + CV*/
@@ -1115,7 +1210,8 @@ input[type="submit"]:hover {
     font-size: 0.9rem;
   }
 
-  .bouton, .bouton-profils {
+  .bouton,
+  .bouton-profils {
     font-size: 0.8rem;
   }
 
@@ -1225,6 +1321,11 @@ input[type="submit"]:hover {
     width: 100%;
     text-align: right;
   }
+
+
+  select option {
+    font-size: 0.7rem;
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -1235,7 +1336,7 @@ input[type="submit"]:hover {
   /* TEAM SECTION */
   .container-profil {
     width: 300px;
-}
+  }
 
   /* ROLLER DANCING SECTION */
   #roller-dancing-img {
@@ -1269,6 +1370,14 @@ input[type="submit"]:hover {
   #social {
     font-size: 65px;
   }
+
+  /* PAGE CONTACT */
+  form::before {
+    top: -5%;
+  }
+  select option {
+    font-size: 0.8rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1293,12 +1402,6 @@ input[type="submit"]:hover {
     justify-content: center;
     align-items: center;
     gap: 5%;
-  }
-
-  #links.animate {
-    animation-name: appear-right;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
   }
 
   #links a:not(#logo) {
@@ -1412,7 +1515,7 @@ input[type="submit"]:hover {
 
   #roller-dancing-text {
     padding: 10%;
-}
+  }
 
   /* GALERIE SECTION */
   #galerie-content {
@@ -1466,6 +1569,12 @@ input[type="submit"]:hover {
   }
   /* ///////////////////// */
 
+  /* CONTACT PAGE */
+
+  form::before {
+    top: -6%;
+  }
+
   #fullname {
     width: 100%;
     display: flex;
@@ -1477,6 +1586,10 @@ input[type="submit"]:hover {
     width: 100%;
   }
 
+  form #fullname label {
+    margin: 0 0 10px;
+  }
+
   form {
     width: 70%;
     padding: 7% 9%;
@@ -1485,8 +1598,11 @@ input[type="submit"]:hover {
 
   form label {
     font-size: 1.3rem;
-}
+  }
 
+  #message {
+    height: 200px;
+  }
 }
 
 @media screen and (min-width: 960px) {
@@ -1565,6 +1681,24 @@ input[type="submit"]:hover {
 
   /*//////////*/
 
+  /* PAGE ROLLER-DANCING */
+  .paragraphe {
+    padding: 150px 8%;
+  }
+
+  #rd-conseils {
+    padding-top: 180px;
+  }
+
+  #rd-presentation {
+    padding-bottom: 180px;
+  }
+
+  form::before {
+    top: -7%;
+    right: -11%;
+  }
+
   form {
     width: 65%;
   }
@@ -1589,5 +1723,14 @@ input[type="submit"]:hover {
   #galerie-content div {
     height: 300px;
     width: 300px;
+  }
+
+  form::before {
+    top: -8%;
+    right: -11%;
+  }
+  
+  select option {
+    font-size: 1rem;
   }
 }
