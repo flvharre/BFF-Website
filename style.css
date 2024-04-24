@@ -1419,6 +1419,29 @@ input[type="submit"]:hover::before {
     margin: 0;
   }
 
+  #links a {
+    position: relative;
+  }
+
+  #links a:not(#logo)::before {
+    content: "";
+    z-index: -10;
+    position: absolute;
+    bottom: 0;
+    left: -4%;
+    width: 0;
+    height: 10px;
+    background-color: #f0a77c;
+    transition: width 0.2s ease-in-out;
+  }
+  
+  #links a:not(#logo):hover::before {
+    width: 108%;
+    transition: width 0.2s ease-in-out;
+  }
+
+
+
   #logo {
     height: 100px;
     width: fit-content;
