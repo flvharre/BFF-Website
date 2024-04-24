@@ -508,6 +508,7 @@ h3,
   width: 8%;
   opacity: 0;
   transition: all 0.2s ease-in-out;
+  transform: rotate(30deg);
   z-index: -1;
 }
 
@@ -515,6 +516,7 @@ h3,
   top: -41%;
   left: -3%;
   width: 15%;
+  transform: rotate(0);
   opacity: 1;
   transition: all 0.2s ease-in-out;
   z-index: -1;
@@ -528,6 +530,7 @@ h3,
   width: 12%;
   opacity: 0;
   transition: all 0.2s ease-in-out;
+  transform: rotate(-30deg);
   z-index: -1;
 }
 
@@ -536,6 +539,7 @@ h3,
   right: -8%;
   width: 22%;
   opacity: 1;
+  transform: rotate(0);
   transition: all 0.2s ease-in-out;
   z-index: -1;
 }
